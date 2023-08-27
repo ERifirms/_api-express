@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
 });
 
 // models
+app.use("/", require("./routers/auth.routes"));
 app.use("/products", require("./routers/product.routes"));
 app.use("/", require("./routers/review.routes"));
 
