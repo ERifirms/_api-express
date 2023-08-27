@@ -1,0 +1,43 @@
+GET http://localhost:4000/products
+
+###
+GET http://localhost:4000/products/64eab9e2f663bcaf05d6dc3a
+
+###
+POST http://localhost:4000/products
+Content-Type: application/json
+
+{
+  "title": "hjbdfi;f",
+  "image": "",
+  "price": 78392e,
+  "location": "bandung",
+  "description": "Barangnya bagus, awet dan garangsi"
+}
+
+###
+PUT  http://localhost:4000/products/64eab9aec7e67becdbecf937
+Content-Type: application/json
+
+{
+  "title": "prodcut 1 updated ",
+  "image": "https://source.unsplash.com/collection/2349781/1280x720",
+  "price": "900000",
+  "location": "Jepang",
+  "description": "Barangnya bagus, awet dan garangsi"
+}
+
+###
+DELETE  http://localhost:4000/products/64eabaef8408798f635d7d53
+
+###
+POST  http://localhost:4000/products/64eab9e2f663bcaf05d6dc3a/reviews
+Content-Type: application/json
+
+{
+  "review[ratting]": "3",
+  "review[review]": "shfiuhfueyngbmeyg"
+}
+
+###
+DELETE http://localhost:4000/products/64eab9e2f663bcaf05d6dc3a/reviews/64eaeaa9d6a5ae4b1fc4377f
